@@ -1,0 +1,1273 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.4.5-Madeira" projectname="">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=aeqd +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs</proj4>
+      <srsid>27900</srsid>
+      <srid>54032</srid>
+      <authid>EPSG:54032</authid>
+      <description>World_Azimuthal_Equidistant</description>
+      <projectionacronym>aeqd</projectionacronym>
+      <ellipsoidacronym></ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer source="/Users/maples/Desktop/Introduction to QGIS/Data/Cities.shp" checked="Qt::Checked" id="Cities20160616105234509" name="Cities" expanded="1" providerKey="ogr">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer source="/Users/maples/Desktop/Introduction to QGIS/Data/World_Countries.shp" checked="Qt::Checked" id="World_Countries20160616105210870" name="World_Countries" expanded="1" providerKey="ogr">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer source="/Users/maples/Desktop/Introduction to QGIS/Data/Lat_Long_30.shp" checked="Qt::Checked" id="Lat_Long_3020160616105141234" name="Lat_Long_30" expanded="1" providerKey="ogr">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>Lat_Long_3020160616105141234</item>
+      <item>World_Countries20160616105210870</item>
+      <item>Cities20160616105234509</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings intersection-snapping="0" type="1" mode="1" enabled="0" tolerance="0" unit="2">
+    <individual-layer-settings>
+      <layer-setting type="1" id="Cities20160616105234509" units="1" enabled="0" tolerance="12"/>
+      <layer-setting type="1" id="Lat_Long_3020160616105141234" units="1" enabled="0" tolerance="12"/>
+      <layer-setting type="1" id="World_Countries20160616105210870" units="1" enabled="0" tolerance="12"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>-18767825.69075139984488487</xmin>
+      <ymin>-19932666.83419827371835709</ymin>
+      <xmax>19803791.99988921359181404</xmax>
+      <ymax>19949917.42304119467735291</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=aeqd +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs</proj4>
+        <srsid>27900</srsid>
+        <srid>54032</srid>
+        <authid>EPSG:54032</authid>
+        <description>World_Azimuthal_Equidistant</description>
+        <projectionacronym>aeqd</projectionacronym>
+        <ellipsoidacronym></ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer showFeatureCount="0" open="true" checked="Qt::Checked" drawingOrder="-1" name="Cities">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile layerid="Cities20160616105234509" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" open="true" checked="Qt::Checked" drawingOrder="-1" name="World_Countries">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile layerid="World_Countries20160616105210870" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" open="true" checked="Qt::Checked" drawingOrder="-1" name="Lat_Long_30">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile layerid="Lat_Long_3020160616105141234" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <projectlayers>
+    <maplayer simplifyDrawingHints="0" minScale="1e+08" refreshOnNotifyEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyLocal="1" simplifyAlgorithm="0" autoRefreshEnabled="0" maxScale="-4.65661e-10" readOnly="0" geometry="Point" autoRefreshTime="0" simplifyDrawingTol="1" labelsEnabled="1">
+      <extent>
+        <xmin>-176.15156363636364745</xmin>
+        <ymin>-54.79200000000003001</ymin>
+        <xmax>179.22188769460365165</xmax>
+        <ymax>78.20000115524544526</ymax>
+      </extent>
+      <id>Cities20160616105234509</id>
+      <datasource>/Users/maples/Desktop/Introduction to QGIS/Data/Cities.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Cities</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=aeqd +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs</proj4>
+          <srsid>27900</srsid>
+          <srid>54032</srid>
+          <authid>EPSG:54032</authid>
+          <description>World_Azimuthal_Equidistant</description>
+          <projectionacronym>aeqd</projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 symbollevels="0" type="singleSymbol" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol alpha="1" force_rhr="0" type="marker" clip_to_extent="1" name="0">
+            <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="96,140,141,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Pie" attributeLegend="1">
+        <DiagramCategory backgroundAlpha="255" width="15" lineSizeType="MM" penWidth="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" maxScaleDenominator="1e+08" penColor="#000000" barWidth="5" labelPlacementMethod="XHeight" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" sizeType="MM" diagramOrientation="Up" penAlpha="255" opacity="1" height="15" scaleBasedVisibility="0" backgroundColor="#ffffff" enabled="0" minScaleDenominator="-4.65661e-10">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings placement="0" linePlacementFlags="10" priority="0" obstacle="0" dist="0" zIndex="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option type="Map" name="properties">
+              <Option type="Map" name="show">
+                <Option value="true" type="bool" name="active"/>
+                <Option value="OBJECTID" type="QString" name="field"/>
+                <Option value="2" type="int" name="type"/>
+              </Option>
+            </Option>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="OBJECTID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CITY_NAME">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GMI_ADMIN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ADMIN_NAME">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIPS_CNTRY">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CNTRY_NAME">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="STATUS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="POP">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="POP_RANK">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="POP_CLASS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PORT_ID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LABEL_FLAG">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Latitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Longitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" index="0" name=""/>
+        <alias field="CITY_NAME" index="1" name=""/>
+        <alias field="GMI_ADMIN" index="2" name=""/>
+        <alias field="ADMIN_NAME" index="3" name=""/>
+        <alias field="FIPS_CNTRY" index="4" name=""/>
+        <alias field="CNTRY_NAME" index="5" name=""/>
+        <alias field="STATUS" index="6" name=""/>
+        <alias field="POP" index="7" name=""/>
+        <alias field="POP_RANK" index="8" name=""/>
+        <alias field="POP_CLASS" index="9" name=""/>
+        <alias field="PORT_ID" index="10" name=""/>
+        <alias field="LABEL_FLAG" index="11" name=""/>
+        <alias field="Latitude" index="12" name=""/>
+        <alias field="Longitude" index="13" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="OBJECTID" applyOnUpdate="0" expression=""/>
+        <default field="CITY_NAME" applyOnUpdate="0" expression=""/>
+        <default field="GMI_ADMIN" applyOnUpdate="0" expression=""/>
+        <default field="ADMIN_NAME" applyOnUpdate="0" expression=""/>
+        <default field="FIPS_CNTRY" applyOnUpdate="0" expression=""/>
+        <default field="CNTRY_NAME" applyOnUpdate="0" expression=""/>
+        <default field="STATUS" applyOnUpdate="0" expression=""/>
+        <default field="POP" applyOnUpdate="0" expression=""/>
+        <default field="POP_RANK" applyOnUpdate="0" expression=""/>
+        <default field="POP_CLASS" applyOnUpdate="0" expression=""/>
+        <default field="PORT_ID" applyOnUpdate="0" expression=""/>
+        <default field="LABEL_FLAG" applyOnUpdate="0" expression=""/>
+        <default field="Latitude" applyOnUpdate="0" expression=""/>
+        <default field="Longitude" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="OBJECTID" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="CITY_NAME" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="GMI_ADMIN" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="ADMIN_NAME" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="FIPS_CNTRY" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="CNTRY_NAME" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="STATUS" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="POP" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="POP_RANK" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="POP_CLASS" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="PORT_ID" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="LABEL_FLAG" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="Latitude" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="Longitude" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="OBJECTID" desc="" exp=""/>
+        <constraint field="CITY_NAME" desc="" exp=""/>
+        <constraint field="GMI_ADMIN" desc="" exp=""/>
+        <constraint field="ADMIN_NAME" desc="" exp=""/>
+        <constraint field="FIPS_CNTRY" desc="" exp=""/>
+        <constraint field="CNTRY_NAME" desc="" exp=""/>
+        <constraint field="STATUS" desc="" exp=""/>
+        <constraint field="POP" desc="" exp=""/>
+        <constraint field="POP_RANK" desc="" exp=""/>
+        <constraint field="POP_CLASS" desc="" exp=""/>
+        <constraint field="PORT_ID" desc="" exp=""/>
+        <constraint field="LABEL_FLAG" desc="" exp=""/>
+        <constraint field="Latitude" desc="" exp=""/>
+        <constraint field="Longitude" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression>"CITY_NAME"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyDrawingHints="0" minScale="1e+08" refreshOnNotifyEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyLocal="1" simplifyAlgorithm="0" autoRefreshEnabled="0" maxScale="0" readOnly="0" geometry="Polygon" autoRefreshTime="0" simplifyDrawingTol="1" labelsEnabled="0">
+      <extent>
+        <xmin>-179.99999999999997158</xmin>
+        <ymin>-90</ymin>
+        <xmax>180.00000033527612686</xmax>
+        <ymax>90.00000016763812027</ymax>
+      </extent>
+      <id>Lat_Long_3020160616105141234</id>
+      <datasource>/Users/maples/Desktop/Introduction to QGIS/Data/Lat_Long_30.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Lat_Long_30</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial dimensions="2" crs="" maxz="0" maxy="0" minx="0" miny="0" maxx="0" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 symbollevels="0" type="singleSymbol" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="0">
+            <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="186,221,105,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,152,72,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Pie" attributeLegend="1">
+        <DiagramCategory backgroundAlpha="255" width="15" lineSizeType="MM" penWidth="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" maxScaleDenominator="1e+08" penColor="#000000" barWidth="5" labelPlacementMethod="XHeight" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" sizeType="MM" diagramOrientation="Up" penAlpha="255" opacity="1" height="15" scaleBasedVisibility="0" backgroundColor="#ffffff" enabled="0" minScaleDenominator="0">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings placement="0" linePlacementFlags="2" priority="0" obstacle="0" dist="0" zIndex="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option type="Map" name="properties">
+              <Option type="Map" name="show">
+                <Option value="true" type="bool" name="active"/>
+                <Option value="OBJECTID" type="QString" name="field"/>
+                <Option value="2" type="int" name="type"/>
+              </Option>
+            </Option>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="OBJECTID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="WRLD_ID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Leng">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Area">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" index="0" name=""/>
+        <alias field="WRLD_ID" index="1" name=""/>
+        <alias field="Shape_Leng" index="2" name=""/>
+        <alias field="Shape_Area" index="3" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="OBJECTID" applyOnUpdate="0" expression=""/>
+        <default field="WRLD_ID" applyOnUpdate="0" expression=""/>
+        <default field="Shape_Leng" applyOnUpdate="0" expression=""/>
+        <default field="Shape_Area" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="OBJECTID" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="WRLD_ID" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="Shape_Leng" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="Shape_Area" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="OBJECTID" desc="" exp=""/>
+        <constraint field="WRLD_ID" desc="" exp=""/>
+        <constraint field="Shape_Leng" desc="" exp=""/>
+        <constraint field="Shape_Area" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column type="field" width="-1" name="OBJECTID" hidden="0"/>
+          <column type="field" width="-1" name="WRLD_ID" hidden="0"/>
+          <column type="field" width="-1" name="Shape_Leng" hidden="0"/>
+          <column type="field" width="-1" name="Shape_Area" hidden="0"/>
+          <column type="actions" width="-1" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="OBJECTID"/>
+        <field editable="1" name="Shape_Area"/>
+        <field editable="1" name="Shape_Leng"/>
+        <field editable="1" name="WRLD_ID"/>
+      </editable>
+      <labelOnTop>
+        <field name="OBJECTID" labelOnTop="0"/>
+        <field name="Shape_Area" labelOnTop="0"/>
+        <field name="Shape_Leng" labelOnTop="0"/>
+        <field name="WRLD_ID" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <previewExpression>OBJECTID</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" simplifyLocal="1" simplifyAlgorithm="0" autoRefreshEnabled="0" maxScale="0" readOnly="0" geometry="Polygon" autoRefreshTime="0" simplifyDrawingTol="1" labelsEnabled="1">
+      <extent>
+        <xmin>-179.99999999999997158</xmin>
+        <ymin>-90</ymin>
+        <xmax>180.00000033527615528</xmax>
+        <ymax>83.60415414684868551</ymax>
+      </extent>
+      <id>World_Countries20160616105210870</id>
+      <datasource>/Users/maples/Desktop/Introduction to QGIS/Data/World_Countries.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>World_Countries</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 symbollevels="0" type="singleSymbol" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="0">
+            <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="92,0,221,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Pie" attributeLegend="1">
+        <DiagramCategory backgroundAlpha="255" width="15" lineSizeType="MM" penWidth="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" maxScaleDenominator="1e+08" penColor="#000000" barWidth="5" labelPlacementMethod="XHeight" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" sizeType="MM" diagramOrientation="Up" penAlpha="255" opacity="1" height="15" scaleBasedVisibility="0" backgroundColor="#ffffff" enabled="0" minScaleDenominator="0">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings placement="0" linePlacementFlags="10" priority="0" obstacle="0" dist="0" zIndex="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option type="Map" name="properties">
+              <Option type="Map" name="show">
+                <Option value="true" type="bool" name="active"/>
+                <Option value="OBJECTID" type="QString" name="field"/>
+                <Option value="2" type="int" name="type"/>
+              </Option>
+            </Option>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="OBJECTID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIPS_CNTRY">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GMI_CNTRY">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISO_2DIGIT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISO_3DIGIT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISO_NUM">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CNTRY_NAME">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LONG_NAME">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISOSHRTNAM">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="UNSHRTNAM">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LOCSHRTNAM">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LOCLNGNAM">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="STATUS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SQKM">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SQMI">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LAND_SQKM">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Leng">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Area">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option value="0" type="QString" name="IsMultiline"/>
+                <Option value="0" type="QString" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" index="0" name=""/>
+        <alias field="FIPS_CNTRY" index="1" name=""/>
+        <alias field="GMI_CNTRY" index="2" name=""/>
+        <alias field="ISO_2DIGIT" index="3" name=""/>
+        <alias field="ISO_3DIGIT" index="4" name=""/>
+        <alias field="ISO_NUM" index="5" name=""/>
+        <alias field="CNTRY_NAME" index="6" name=""/>
+        <alias field="LONG_NAME" index="7" name=""/>
+        <alias field="ISOSHRTNAM" index="8" name=""/>
+        <alias field="UNSHRTNAM" index="9" name=""/>
+        <alias field="LOCSHRTNAM" index="10" name=""/>
+        <alias field="LOCLNGNAM" index="11" name=""/>
+        <alias field="STATUS" index="12" name=""/>
+        <alias field="SQKM" index="13" name=""/>
+        <alias field="SQMI" index="14" name=""/>
+        <alias field="LAND_SQKM" index="15" name=""/>
+        <alias field="Shape_Leng" index="16" name=""/>
+        <alias field="Shape_Area" index="17" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="OBJECTID" applyOnUpdate="0" expression=""/>
+        <default field="FIPS_CNTRY" applyOnUpdate="0" expression=""/>
+        <default field="GMI_CNTRY" applyOnUpdate="0" expression=""/>
+        <default field="ISO_2DIGIT" applyOnUpdate="0" expression=""/>
+        <default field="ISO_3DIGIT" applyOnUpdate="0" expression=""/>
+        <default field="ISO_NUM" applyOnUpdate="0" expression=""/>
+        <default field="CNTRY_NAME" applyOnUpdate="0" expression=""/>
+        <default field="LONG_NAME" applyOnUpdate="0" expression=""/>
+        <default field="ISOSHRTNAM" applyOnUpdate="0" expression=""/>
+        <default field="UNSHRTNAM" applyOnUpdate="0" expression=""/>
+        <default field="LOCSHRTNAM" applyOnUpdate="0" expression=""/>
+        <default field="LOCLNGNAM" applyOnUpdate="0" expression=""/>
+        <default field="STATUS" applyOnUpdate="0" expression=""/>
+        <default field="SQKM" applyOnUpdate="0" expression=""/>
+        <default field="SQMI" applyOnUpdate="0" expression=""/>
+        <default field="LAND_SQKM" applyOnUpdate="0" expression=""/>
+        <default field="Shape_Leng" applyOnUpdate="0" expression=""/>
+        <default field="Shape_Area" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="OBJECTID" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="FIPS_CNTRY" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="GMI_CNTRY" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="ISO_2DIGIT" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="ISO_3DIGIT" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="ISO_NUM" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="CNTRY_NAME" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="LONG_NAME" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="ISOSHRTNAM" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="UNSHRTNAM" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="LOCSHRTNAM" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="LOCLNGNAM" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="STATUS" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="SQKM" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="SQMI" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="LAND_SQKM" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="Shape_Leng" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+        <constraint field="Shape_Area" unique_strength="0" constraints="0" exp_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="OBJECTID" desc="" exp=""/>
+        <constraint field="FIPS_CNTRY" desc="" exp=""/>
+        <constraint field="GMI_CNTRY" desc="" exp=""/>
+        <constraint field="ISO_2DIGIT" desc="" exp=""/>
+        <constraint field="ISO_3DIGIT" desc="" exp=""/>
+        <constraint field="ISO_NUM" desc="" exp=""/>
+        <constraint field="CNTRY_NAME" desc="" exp=""/>
+        <constraint field="LONG_NAME" desc="" exp=""/>
+        <constraint field="ISOSHRTNAM" desc="" exp=""/>
+        <constraint field="UNSHRTNAM" desc="" exp=""/>
+        <constraint field="LOCSHRTNAM" desc="" exp=""/>
+        <constraint field="LOCLNGNAM" desc="" exp=""/>
+        <constraint field="STATUS" desc="" exp=""/>
+        <constraint field="SQKM" desc="" exp=""/>
+        <constraint field="SQMI" desc="" exp=""/>
+        <constraint field="LAND_SQKM" desc="" exp=""/>
+        <constraint field="Shape_Leng" desc="" exp=""/>
+        <constraint field="Shape_Area" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression>"CNTRY_NAME"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="Lat_Long_3020160616105141234"/>
+    <layer id="World_Countries20160616105210870"/>
+    <layer id="Cities20160616105234509"/>
+  </layerorder>
+  <properties>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <Gui>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+    </Digitizing>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSUrl type="QString"></WMSUrl>
+    <Variables>
+      <variableNames type="QStringList"/>
+      <variableValues type="QStringList"/>
+    </Variables>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+      <ProjectCRSProj4String type="QString">+proj=aeqd +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:54032</ProjectCrs>
+      <ProjectCRSID type="int">27900</ProjectCRSID>
+    </SpatialRefSys>
+    <WMSRootName type="QString"></WMSRootName>
+    <WCSLayers type="QStringList"/>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMTSLayers>
+      <Project type="bool">false</Project>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+    </WMTSLayers>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">D</DegreeFormat>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <Paths>
+      <Absolute type="bool">true</Absolute>
+    </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMTSJpegLayers>
+      <Project type="bool">false</Project>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+    </WMTSJpegLayers>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <PAL>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <TextFormat type="int">0</TextFormat>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+    </PAL>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSRestrictedComposers type="QStringList"/>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMTSPngLayers>
+      <Project type="bool">false</Project>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+    </WMTSPngLayers>
+    <WFSLayers type="QStringList"/>
+    <DefaultStyles>
+      <Opacity type="double">1</Opacity>
+      <Marker type="QString"></Marker>
+      <Line type="QString"></Line>
+      <AlphaInt type="int">255</AlphaInt>
+      <RandomColors type="bool">true</RandomColors>
+      <ColorRamp type="QString"></ColorRamp>
+      <Fill type="QString"></Fill>
+    </DefaultStyles>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Delete type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <WMTSUrl type="QString"></WMTSUrl>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author></author>
+    <creation>2000-01-01T00:00:00</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>
