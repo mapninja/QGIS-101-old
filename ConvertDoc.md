@@ -1,5 +1,4 @@
-Introduction to GIS with QGIS
-=============================
+# Introduction to GIS with QGIS
 
 Stacey Maples – Geospatial Manager – Stanford Geospatial Center –
 <stacemaples@stanford.edu>
@@ -24,8 +23,7 @@ include:
 
 -   Simple Analysis using Visualization.
 
-GIS Resources:
---------------
+## GIS Resources:
 
 Stanford Geospatial Center website - <http://gis.stanford.edu/>
 
@@ -36,8 +34,7 @@ QGIS Current Version Download -
 
 QGIS Current Version Help - [https://qgis.org/en/docs/index.html](https://qgis.org/en/docs/index.html)
 
-Download Tutorial Data
-----------------------
+## Download Tutorial Data
 
 1.  In a browser, go to <https://stanford.box.com/SGCIntroGIS> and click on the
     drop-down arrow to the right of each folder to download individual datasets.
@@ -393,34 +390,34 @@ Expression button** ![](./media/image33.png) and **click** on it.
 
 ### Exporting Data
 
-Notice that the Selection looks more manageable that the full dataset. Now you
+Notice that the Selection looks more manageable than the full dataset. Now you
 will export this selection as a new shapefile, and bring it back into QGIS as a
 new Layer.
 
+1. **Right-click** on the **Cities Layer** and select **Save As.**
 
-
-**Right-click** on the **Cities Layer** and select **Save As.**
+![](./media/image37.png)  
 
 1.  **Check** Save only selected features.
 
 2.  **Click** on the **Browse Button** and Browse into the **Data Folder** to
     save the new shapefile as **Major_Cities.shp.**
 
-    ![](media/image37.png)
+![](./media/image37b.png)
 
 3.  **Click Save** and **OK**.
 
 4.  **Right-click** on the **original Cities Layer** and select **Remove**.
 
-#### Change City Symbology
+### Change City Symbology
 
 Now we have two classes of POP_RANK to work with, and would like to distinguish
-them from one another, visually.
+them from one another, visually.  
 
-![](media/image38.png)
-
-**Right-Click** on the new **Major_Cities Layer** and **Open** its
+1. **Right-Click** on the new **Major_Cities Layer** and **Open** its
 **Properties**
+
+![](./media/image38.png)
 
 1.  **Click** on the **Style Tab** and **Select Categorized**
 
@@ -433,22 +430,21 @@ them from one another, visually.
 5.  In the resulting Symbol Selector, select Color Black and change Size to 1
     for “**1,000,000 to 4,999,999**” item. Click OK
 
-![](media/image39.png)
+![](./media/image39.png)
 
-Using the same method, change the symbol for the “**5,000,000 and greater**”
+
+6. Using the same method, change the symbol for the “**5,000,000 and greater**”
 item to Color Black with a size of 3 **points**.
 
-1.  **Unchecked** the point with no value.
+1.  **Uncheck** the point with no value.
 
 2.  **Click OK** to close the Layer Properties Window.
 
 3.  **Click Save**
 
-![](media/image40.png)
+![](./media/image40.png)
 
-#### Label Cities
-
-![](media/image41.png)
+### Label Cities
 
 Another property of the layers in our Document that we might want to enable is
 the labeling of features. This can be accomplished, based upon an attribute
@@ -465,18 +461,19 @@ example, we will label only the cities with a POP_RANK value of 1.
 
 3.  **Check** the **Label this layer with** to enable options and **Select**
     CITY_NAME and Click **Ok.**
-
-![](media/image42.png)
+    
+![](./media/image41.png)
 
 Note that this turns on labels for all features and. Because there are so many
 visible features in this layer, this creates an unreadable labeling scheme. To
 remedy this, we will limit labeling to the largest cities in the Major Cities
 Layer.
 
-![](media/image43.png)
+### Label Cities with Expressions
 
-**Right-click** on the **Major_Cities Layer** and select **Properties**. Go to
-the **Labels Tab** and **Click** on **Rendering**.
+1. **Right-click** on the **Major_Cities Layer** and select **Properties**. Go to the **Labels Tab** and **Click** on **Rendering**.  
+
+![](./media/image43.png)  
 
 1.  **Click** on the **Show Label** icon and **Select Edit** to open the
     Expression string builder window.
@@ -484,7 +481,9 @@ the **Labels Tab** and **Click** on **Rendering**.
 2.  **Expand** Fields and Values and **Double Click** on POP_RANK.
 
 3.  In the **SQL Query** window, create a **SELECT argument** as follows:  
-    **“POP_RANK”=1**
+    **“POP_RANK”=1**  
+
+![](./media/image42.png)  
 
 4.  **Click OK**
 
@@ -496,39 +495,28 @@ the **Labels Tab** and **Click** on **Rendering**.
 1.  **Right-click** the **World\_ Countries dbf** and open the **Attribute
     Table.**
 
->   You may have noticed that many of the features in the
->   World_Population_2007.dbf file had values of **-99999** for the POP2007
->   attribute. This normally indicates **NODATA** for the particular feature in
->   demographic datasets. In this case, we would like to exclude this value from
->   our Map Document. We could use the method used to subset the Cities layer
->   earlier in the tutorial, but this time we will use another method called
->   Definition Query. Definition Queries “define” a dataset, based upon a SQL
->   Query, like the ones we have used to create the selection by attributes and
->   the labeling class. In this case, the Definition Query “defines” a subset of
->   the data layer that QGIS treats as the entirety of the dataset. It does not,
->   however, require creating a new dataset (preventing redundancy in data
->   storage) and does not alter the dataset being referenced, only our view of
->   it in QGIS.
+You may have noticed that many of the features in the World\_Population\_2007.dbf file had values of **-99999** for the POP2007 attribute. This normally indicates **NODATA** for the particular feature in demographic datasets. In this case, we would like to exclude this value from our Map Document. We could use the method used to subset the Cities layer earlier in the tutorial, but this time we will use another method called Definition Query. Definition Queries “define” a dataset, based upon a SQL Query, like the ones we have used to create the selection by attributes and the labeling class. In this case, the Definition Query “defines” a subset of the data layer that QGIS treats as the entirety of the dataset. It does not, however, require creating a new dataset (preventing redundancy in data storage) and does not alter the dataset being referenced, only our view of it in QGIS.
 
-1.  **Close the World_Countries** Attribute Table.
+1.  **Close the World\_Countries** Attribute Table.
 
-2.  **Right-click** the **World_Population_2007.dbf** and open the **Properties
+2.  **Right-click** the **World\_Population_2007.dbf** and open the **Properties
     Window**.
 
 3.  **Go** to the General Tab and **Click** on the **Query Builder button** at
     the bottom right**.**
 
-![](media/image44.png)
+![](./media/image44.png)
 
-On the Query Builder window create an **Expression** as follows:  
-**"POP2007" \< \> -99999**
+1. On the Query Builder window create an **Expression** as follows:  
+**"POP2007" \< \> -99999**  
+
+![](./media/image45.png)
 
 1.  **Click OK twice** to **apply** the **Definition Query**.
 
-![](media/image45.png)
 
-**Click the Refresh button. Open** the **Attribute Table** for the
-**World_Population_2007 Layer** *and notice how the POP2007 Field no longer
+3. **Click the Refresh button. Open** the **Attribute Table** for the
+**World\_Population\_2007 Layer** *and notice how the POP2007 Field no longer
 contains records with -99999 as a value.*
 
 ### Join a Table to a Layer 
@@ -538,12 +526,12 @@ would like to visualize the layer based upon population density. However, the
 attribute table for this layer doesn’t contain data on population. Fortunately
 we have a table in our Map Document with the necessary population attribute.
 
-1.  **Right-click** on the **World_Population_2007 Table** and select **Open**.
+1.  **Right-click** on the **World\_Population\_2007 Table** and select **Open**.
 
 2.  Scroll through the attributes and note the **FIPS_CNTRY** Attribute Field.
 
-3.  **Open** the **Attribute Table** for the **World_Countries Layer** and note
-    that it also has a **FIPS_CNTRY** Attribute Field.
+3.  **Open** the **Attribute Table** for the **World\_Countries Layer** and note
+    that it also has a **FIPS\_CNTRY** Attribute Field.
 
 >   Since this attribute exists in both of these attribute tables, and its
 >   values are identical across the two datasets, we can use this attribute as
@@ -551,48 +539,43 @@ we have a table in our Map Document with the necessary population attribute.
 
 1.  **Close** the **Attribute Table** for the **World_Countries Layer.**
 
-![](media/image46.png)
 
-![](media/image47.png)
-
-**Right Click** on the **World_Countries Layer** and **Select Properties**
+1. **Right Click** on the **World\_Countries Layer** and **Select Properties**
 
 1.  **Go** to the **Joins Tab** and **Click the Green Plus Sign** to open the
     **Add vector join** window.
 
-2.  **Select World_Population_2007** as the **Join layer** and **FIPS_CNTRY**
+2.  **Select World\_Population\_2007** as the **Join layer** and **FIPS_CNTRY**
     for the **Join** & **Target** fields.
+    
+![](./media/image46.png)
 
 3.  **Click OK** to close the Window and **Apply** to create the Join.
 
 4.  **Close** the **Layer Properties Window** and **Open** the **Attribute
-    Table** for the **World_Countries Layer** and note the **POP2007 Attribute
-    (along with all other attributes from the World_Population_2007 table).**
+    Table** for the **World\_Countries Layer** and note the **POP2007 Attribute
+    (along with all other attributes from the World\_Population\_2007 table).**
 
-    Some values are NULL because they were dropped
+    Some values are NULL because they were dropped when we perform the definition query.
 
-    when we perform the definition query.
-
-#### Symbolize Countries by Population Density
+### Symbolize Countries by Population Density
 
 We can now use the POP2007 attribute to visualize population density. Even
 though the POP2007 variable is a raw counts variable, we can use the Style Tabs
 Normalization capability to divide the POP2007 variable by the area of the
 features to create the density value on-the-fly.
 
-![](media/image48.png)
-
 **Open** the **Properties** for the **World_Countries Layer** and click on the
 **Style Tab**.
 
-1.  **Select Graduated** and **click** the Expression Dialog button.
-
-    ![](media/image49.png)
+1.  **Select Graduated** and **click** the Expression Dialog button. ![](media/image49.png)
 
 2.  **Expand** the **Fields and Values** and **double click** on the fields to
     **write** the normalization expression:
 
-    "World_Population_2007_POP2007" / "SQMI" and **Click OK.**
+   `"World_Population_2007_POP2007" / "SQMI"` and **Click OK.**
+    
+![](./media/image48.png)
 
 3.  **Select Quantiles** as the classification mode and with **5 Classes**.
 
@@ -600,7 +583,7 @@ features to create the density value on-the-fly.
 
 5.  **Select** a **Color Ramp** and **Click OK** to **apply** the **Symbology**.
 
-6.  **Uncheck** the Lat_Long_30 shapefile
+6.  **Uncheck** the **Lat\_Long\_30** shapefile
 
 *Note: When selecting your color ramp, be careful about selecting anything other
 than monochrome color ramps. This is because you want your map to “read well” in
@@ -608,48 +591,34 @@ grayscale. In some of the 2-3 color ramps, the Intensity value of the colors at
 each end of the spectrum is the same, so that they produce identical grayscale
 values when converted, Xeroxed or printed in black & white.*
 
-[media/image50.png](media/image50.png)
---------------------------------------
 
 Print Composer
 
-1.  **Click** on **New Print Composer**
+1.  **Click** on **New Print Composer** ![](./media/image50.png) and name it **World_Population07. Click** OK.
 
-    ![](media/image51.png)
+>   Note that a new window opens. Take a moment to **explore** the **Composer toolbar**
 
-    and name it **World_Population07. Click** OK.
+![](./media/image51.png)
 
->   Note that a new window opens. Take a moment to **explore** the **Composer
->   toolbar**
-
-![](media/image52.png)
-
-1.  **Click** the Add a new map icon
-
-    and place the mouse pointer over the blank sheet. Notice a crosshair
-    pointer. **Click and hold** on the left corner of the page and extend to the
-    bottom right to draw a bounding box.
+1.  **Click** the Add a new map icon ![](media/image52.png) and place the mouse pointer over the blank sheet. Notice a crosshair pointer.   
+2. **Click and hold** on the left corner of the page and extend to the bottom right to draw a bounding box.
 
 The Page Orientation and Size can be changed using the composition tab.
 
 ![](media/image53.png)
 
-**Click** on the **Map Box** to select the item.
+1. **Click** on the **Map Box** to select the item.
 
 1.  **Go** to the **Item Properties Tab** and expand **Position and Size.** Set
     the **Map Size** as **10 in wide by 7 in (254 by 178 mm)**.
 
-![](media/image54.png)
-
-**Click** on the **Frame Tab** and set the **Border weight** to **.50mm
+1. **Click** on the **Frame Tab** and set the **Border weight** to **.50mm
 points**.
 
 1.  On the **QGIS Map Canvas**, go to **Bookmarks** and zoom to your **Europe &
     Asia** bookmark.
 
-![](media/image55.png)
-
-Go to the map composer \> Item Properties \> Extents and **Click** View extent
+1. Go to the map composer \> Item Properties \> Extents and **Click** View extent
 in map canvas. To pan inside the map element **click** the **Move Item content**
 icon and pan inside the map.
 
@@ -657,47 +626,37 @@ icon and pan inside the map.
 
 ### Adding Map Elements
 
-#### [media/image56.png](media/image56.png)
+#### Legend
 
-Legend
+**Click the Add new legend** button ![](./media/image56.png) and draw a bounding box inside the map.
 
-![](media/image57.png)
+1. On the Legend items **click the Filter by content** icon ![](./media/image57.png)
 
-**Click the Add new legend** and draw a bounding box inside the map.
+2. Expand the Spacing Tab and set the box space to 5.0 mm.
 
-1.  On the Legend items **click the Filter by content** icon.
+![](./media/image59.png)
 
-2.  Expand the Spacing Tab and set the box space to 5.0 mm.
-
-![](media/image58.png)
-
-Give the **Legend** a **Border** of .50 mm and **Background** (white is a good
+3. Give the **Legend** a **Border** of .50 mm and **Background** (white is a good
 choice).
 
-![](media/image59.png)
+4. **Click Next\>** to **accept all remaining default settings** and insert the Legend.
 
-**Click Next\>** to **accept all remaining default settings** and insert the
-Legend.
-
-1.  Use the **Select move item tool** to **reposition** the **Legend**
+1.  Use the **Select move item tool** ![](./media/image58.png) to **reposition** the **Legend**
 
 2.  **Go** back to the Map Document and **Open** the layer properties. **Rename
     the layer Major_Cities to** “**Major Cities**” removing the underscore, and
     **click Ok** to commit the change.
 
-3.  **Go** to the map composer and click the **Refresh** button.
+3.  **Go** to the map composer and click the **Refresh** button.  
 
->   *Note that the change you have made to the name of the Layer is also
->   reflected in the Legend*.
+*Note that the change you have made to the name of the Layer is also reflected in the Legend*.
 
 1.  Make changes to the other Text Elements of your Layers so that your Legend
     contains properly formatted and reasonable text descriptions and labels.
 
-#### [media/image60.png](media/image60.png)
+#### Scale Bar
 
-Scale Bar
-
-1.  **Click** the Add new bar scale tool
+1.  **Click** the Add new bar scale tool ![](./media/image60.png)
 
 2.  On the Item properties change the **Style** to Line Ticks Up.
 
@@ -708,11 +667,10 @@ Scale Bar
 5.  Use the **Select Elements Tool** to **resize** and **reposition** the
     **Scale Bar**.
 
-#### [media/image61.png](media/image61.png)
 
-Neat Line
+#### Neat Line
 
-1.  **Click** the Add figure and **select** add a rectangle.
+1.  **Click** the Add figure ![](./media/image61.png) and **select** add a rectangle.
 
 2.  Be sure to draw it around all elements.
 
@@ -721,14 +679,11 @@ Neat Line
 
 4.  **Click OK** to add the **neatline**.
 
-Exporting Your Map
-------------------
+### Exporting Your Map
 
-![](media/image62.png)
+1.  **Save your Map Composer**  
 
-**Save your Map Composer**.
-
-1.  **Click** on the **Export as Image Button.**
+1.  **Click** on the **Export as Image Button** ![](./media/image62.png)
 
 2.  **Save as type** to **PNG(\*.png)** and name it **EX01_World**
 
@@ -737,4 +692,4 @@ Exporting Your Map
 4.  **Browse** to the Workshop Folder and double click on the **EX01_World.png**
     file to view it in the default image viewer.
 
-![](media/image63.png)
+![](./media/image63.png)
