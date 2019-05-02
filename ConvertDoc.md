@@ -20,7 +20,7 @@ include:
 
 -   Basic Data Management
 
--   The ArcMap User Interface
+-   The QGIS User Interface
 
 -   Simple Analysis using Visualization.
 
@@ -31,6 +31,8 @@ Stanford Geospatial Center website - <http://gis.stanford.edu/>
 
 Stanford GIS Listserv -
 <https://mailman.stanford.edu/mailman/listinfo/stanfordgis>
+
+QGIS Current Version Download - 
 
 QGIS Current Version Help - [https://qgis.org/en/docs/index.html](https://qgis.org/en/docs/index.html)
 
@@ -58,7 +60,7 @@ familiar with the Default User Interface.
 2.  You should be presented with the **New Document**. You should then be
     presented with something like the interface you see below:
 
-![](media/image1.png)
+![](./media/image1.png)
 
 ### The Basic Components of the QGIS Interface
 
@@ -97,7 +99,7 @@ The QGIS interface is made up of three basic components:
 -   **Manage Layers –** This bar is to add layers (vector, raster, new shapefile
     layer)
 
-### [media/image2.png](media/image2.png)
+![](./media/image2.png)
 
 Interacting with Tabbed Windows
 
@@ -106,11 +108,10 @@ Interacting with Tabbed Windows
 
 ### Explore the Browser
 
-![](media/image3.png)
+![](./media/image3.png)
 
-Using the **Window Explorer**, browse to the **\\Introduction to
-ArcGIS\\EX01_World folder**, where you extracted the EX01_World.zip file and
-browse into the **EX01_World\\Data** Folder.
+Using the **Window Explorer**, browse to the **\\Introduction\_to\_ArcGIS\\EX01\_World folder**, where you extracted the **EX01\_World.zip** file and
+browse into the **EX01\_World\\Data** Folder.  
 
 Note that, while there are 23 files in this folder, there are actually only 3
 Shapefiles and a CSV Table here, as far as QGIS is concerned. This is because a
@@ -127,68 +128,66 @@ same way, or you can corrupt the shapefile.
 
 2.  **Expand** the **Home** and **Desktop** folder.
 
-3.  **Expand** the **Introduction to ArcGIS**, and then **expand** the
-    **Workshop Data Folder**.
+3.  **Expand** the **Introduction to QGIS**, and then **expand** the
+    **Data** Folder.
 
-![](media/image4.png)
+![](./media/image4.png)
 
 Note that the Shapefile is much simplified in the Browser Window. Although the
 Shapefile is still made up of several files, QGIS seems to know that it’s not a
 good idea to make you deal with all that, so it simplifies things by only
 showing you the .shp file.
 
-Finally, let’s open a Map Document!
------------------------------------
-
-![](media/image5.png)
+### Finally, let’s open a Map Document!
 
 You should, in addition to a Data Folder full of shapefiles, have a Map Document
-in your **\\Introduction to ArcGIS\\EX01_World \\EX01_World Folder** called…
-EX01_World.qgs. The icon looks like this:
+in your **\\Introduction to QGIS\\** folder called…
+**EX01\_World.qgs**. The icon looks like this: ![](media/Qlogo.png)  
 
-1.  **Drag** the **EX01_World Map Document** into the **Map Canvas** to open it.
+1.  **Drag** the **EX01_World.qgs Map Document** into the **Map Canvas** to open it.
 
 ### But Wait!
 
 Has something gone awry? Do you see something that looks like this?
 
-![](media/image6.png)
+![](./media/image6.png)
 
 You are experiencing the dreaded “**Absolute Paths**” problem, endemic to GIS
 Softwares. To fix this issue, do the following:
 
 1.  **Press shift and click** to select all the layers.
 
-2.  **Click the Browse** and look for the **Data_QGIS** of the tutorial dataset
+2.  **Click the Browse** and browse to the **Data** folder
     and **select the folder**. Click OK.
 
-![](media/image7.png)
+![](./media/image7.png)
 
-You should find that (because they are all in the same ‘**workspace’**) all of
+You should find that (because they are all in the same ‘**workspace**') all of
 your layers have been repaired and you should see something like the image on
-the right.
+the above (it's likely to look quite "sketchy").
 
-![](media/image8.png)
 
 ### The Layers Tabbed window and its Properties 
 
 Now take a look at the **Layers Tabbed Window**. You should 3 Layers
 corresponding to the shapefiles in your Data Folder.
 
-What you don’t see is that **CSV Table**. **Look** for the
-**World_Population_2007** on the **Browser Window**, select it and drag it to
-the **Layers Window.**
+![](./media/image8.png)
 
-Note that the **World_Population_2007** table has been added to the Layers.
+What you don’t see is that **CSV Table**. Look for the
+**World\_Population\_2007** on the **Browser Panel**, select it and drag it to
+the **Layers Panel.**
 
-Notice how Asia almost disappears. **Right-Click** on the Lat_Long_30 shapefile.
+Note that the **World\_Population\_2007** table has been added to the Layers.
+
+Notice how Asia almost disappears? **Right-Click** on the **Lat\_Long\_30** shapefile.
 Select **Properties** and go to the **General Tab.** Under *Coordinate Reference
 System* (CRS) notice that the selected CRS is WGS 84**.** If you click on it,
-you will see that the Project CRS is World_Azimuthal Equidistant. This
+you will see that the Project CRS is **World\_Azimuthal\_Equidistant**. This
 projection is useful for showing correct airline distances. So the layers in
 this document are displayed using World Azimuthal Distance.
 
-![](media/image9.png)
+![](./media/image9.png)
 
 ### Change the project Coordinate System. 
 
@@ -197,7 +196,9 @@ this document are displayed using World Azimuthal Distance.
 Close the **Layer Properties** and go to the **Project Tab** (Pull-down menu)
 and select **Project Properties…**
 
-1.  **Click** on the **CRS Tab**. **Filter and Select** “EPSG:4326 (WGS 84)”
+1.  **Click** on the **CRS Tab**. 
+
+2. **Filter and Select** “EPSG:4326 (WGS 84)”
 
 2.  **Click** OK
 
@@ -207,12 +208,12 @@ What you have just done is reassigned the coordinate system of the **Map
 Canvas** to that of the **Layers** in your **Map Document**. This (**GCS WGS
 1984**) is actually the coordinate system of all of the layers in your **Map
 Document**, so you should experience an increase in drawing performance, since
-**QGIS** is no longer projecting these layers on-the-fly to the **World
+**QGIS** is no longer projecting these layers "on-the-fly" to the **World
 Azimuthal Equidistant projection** (which was chosen for its extremity, in this
 case). The result of this change should be a fairly substantial change to the
 view on the Map Canvas.
 
-![](media/image11.png)
+![](./media/image11.png)
 
 ### Change the Layer Coordinate System. 
 
@@ -229,6 +230,8 @@ Where are the cities?
 
 4.  **Click Save**
 
+![](./media/image11a.png)
+
 Explore Navigations Tools and Visibility in Data Frames
 -------------------------------------------------------
 
@@ -239,114 +242,76 @@ some of the more useful ones involve right-click context menus of the layers.
 
 ### Zoom to Layer
 
-1.  **Right-click** on the **Lat_Lon_30 Layer**, in the **Layers Window**, and
+1.  **Right-click** on the **Lat\_Lon\_30 Layer**, in the **Layers Window**, and
     select **Zoom to Layer**.
 
 Note that this should present you with the entirety of the Lat_Lon_30 Layer’s
 extent.
 
-#### Map Navigation Toolbar
+### Map Navigation Toolbar
 
-![](media/image12.png)
+![](./media/image12.png)
 
 The **Map Navigation Toolbar** provides the bulk of the tools for navigation in
 the **Map Canvas**. Most of them are fairly obvious. Take a moment to explore
 each of these tools, and how it works.
 
-![](media/image13.png)
-
-The **Touch Zoom and Pan** - Works if you have a notebook with touch screen.
+![](./media/image13.png)  The **Touch Zoom and Pan** - Works if you have a notebook with touch screen.
 Zoom in and zoom out using double finger touch.
 
-![](media/image14.png)
-
-The **Pan Map** changes the Extent of Map Canvas, without changing the scale.
+![](./media/image14.png)  The **Pan Map** changes the Extent of Map Canvas, without changing the scale.
 Click on the Pan Tool and use it to move around the Map Canvas.
 
-![](media/image15.png)
-
-The **Pan Map to Selection** changes the Extent of your Map Canvas to the
+![](./media/image15.png)  The **Pan Map to Selection** changes the Extent of your Map Canvas to the
 feature being selected, without changing the scale
 
-![](media/image16.png)
-
-The **Zoom In Tool** and
-
-![](media/image17.png)
-
-**Zoom Out** works exactly as you would expect. Click on the Zoom Tool, and drag
+![](./media/image16.png)  The **Zoom In Tool** and  ![](./media/image17.png)  **Zoom Out** works exactly as you would expect. Click on the Zoom Tool, and drag
 a box to enclose the Continental United States. You can also single-click with
 this tool to use it as a Fixed Zoom Tools.
 
-![](media/image18.png)
-
-The **Zoom Full** zooms you to the full extent of the layer in your Map Project
-with the largest spatial extent. This can sometimes be problematic if you are
+![](./media/image18.png)  The **Zoom Full** zooms you to the full extent of the layer in your Map Project with the largest spatial extent. This can sometimes be problematic if you are
 working at a local level, but using one or more layers that are global in extent
 (for example, many of the network base map services).
 
-![](media/image19.png)
-
-The **Zoom to Selection** changes the Extent of your Map Canvas and zooms in or
+![](media/image19.png)  The **Zoom to Selection** changes the Extent of your Map Canvas and zooms in or
 out to the selected feature.
+
+### Scale
 
 When zooming in or out, the Scale Values at the bottom page change. Remember
 that the bigger the number (1:60,000,000), the larger the area being displayed.
 Although 60,000,000 is bigger than 60, a scale 1:60,000,000 is a small scale and
 1:60 is a large scale because the division of 1/60,000,000 is smaller than 1/60.
 
-![](media/image20.png)
+![](./media/image20.png)
 
-![](media/image21.png)
+![](./media/image22.png)  The **Zoom to Layer** to a specific layer extent.
 
-![](media/image22.png)
+![](./media/image23.png)  The **Zoom Last** and ![](./media/image24.png) **Zoom Next** works as a Redo or Undo tool **ONLY** for the Scale/Extent in your Map Canvas. This tool is particularly useful if you change your Map Extent inadvertently.
 
-The **Zoom to Layer** to a specific layer extent.
-
-![](media/image23.png)
-
-The **Zoom Last** and
-
-![](media/image24.png)
-
-**Zoom Next** works as a Redo or Undo tool **ONLY** for the Scale/Extent in your
-Map Canvas. This tool is particularly useful if you change your Map Extent
-inadvertently.
-
-![](media/image25.png)
-
-The **Refresh Button** will reload your Map Extent
+![](./media/image25.png)  The **Refresh Button** will reload your Map Extent
 
 ### Bookmarks
 
 One of the most useful navigation tools is the ability to create **spatial
-Bookmarks**.
-
-![](media/image26.png)
+Bookmarks**.  
 
 **Right Click** on any grey area and select **Spatial Bookmarks.**
 
 1.  Using the **Zoom Tools** on the **Tools Toolbar**, **Zoom** your **Data
     Frame** view to the **European/Asian Landmass**.
+    
+2. Go to the Spatial Bookmark Tabbed Window and **Click on Add Bookmark**  ![](./media/image28.png) and name it **Europe & Asia**
 
-![](media/image27.png)
+![](./media/image26.png) 
 
-Go to the Spatial Bookmark Tabbed Window and **Click on Add Bookmark** and name
-it **Europe & Asia**
+3. **Click** on the **Zoom Full button** ![](./media/image18.png)
 
-![](media/image28.png)
-
-**Click** on the **Zoom Full button**
-
-![](media/image18.png)
-
-.
-
-1.  **Go** to your **Spatial Bookmark** Window. **Select** “Europe & Asia” and
+4.  **Go** to your **Spatial Bookmark** Window. **Select** “Europe & Asia” and
     **click** the **Zoom to bookmark**. You can also zoom to a bookmark by
     double- clicking on it.
-
-    .
+    
+![](./media/image27.png)
 
 Bookmarks can even be easily shared or moved from one using the Import/Export
 tool Bookmarks, too. The bookmarks are saved as xml files that can be imported
@@ -355,31 +320,28 @@ coordinates.
 
 ### Display Order
 
-![](media/image29.png)
-
 The Layer Order in the Layer Window determines the order of display in your Map
 Canvas
 
 1.  If you haven’t already, change your **Layers view, click and drag** the
-    **Lat_Lon_30 layer** to the **top** of the **Layers Window**. Note that the
+    **Lat\_Lon\_30 layer** to the **top** of the **Layers Window**. Note that the
     other layers in your Map Canvas are now obscured.
+    
+![](./media/image29.png)
 
-Working with Layers & Their Properties
---------------------------------------
+## Working with Layers & Their Properties
 
-### [media/image30.png](media/image30.png)
-
-Layer Visibility
+### Layer Visibility
 
 The Table of Contents also controls Layer Visibility. You can toggle the Layer
 Visibility using the checkbox next to each Layer in the Layer Window.
 
 1.  Use the **Visibility Checkbox** next to the **Lat_Long_30** Layer to **turn
     off** the **visibility** of the layer and reveal the other layers again.
+    
+![](./media/image30.png)
 
 ### Examining and Selecting by Attributes
-
-![](media/image31.png)
 
 The most basic method of analysis in GIS is selection and sub-setting of data by
 attribute values. Now that the Cities Layer is visible again, we can begin to
@@ -389,11 +351,11 @@ populations greater than or equal to 1 million. First we need to see if the data
 necessary to do this exists in our dataset.
 
 1.  **Right-Click** on the **Cities Layer** and select “**Open Attribute
-    Table**” to open the **Attribute Table** of the layer.
+    Table**” to open the **Attribute Table** of the layer.  
+    
+![](./media/image31.png)  
 
-![](media/image32.png)
-
-**Click and Drag** the resulting **Table Window** to the **bottom** of the **Map
+2. **Click and Drag** the resulting **Table Window** to the **bottom** of the **Map
 Document** and expand the entire width of the Window.
 
 1.  **Scroll** to the right until you can see the **POP, POP_RANK** and
@@ -405,33 +367,29 @@ Document** and expand the entire width of the Window.
 3.  **Scroll** down through the **Attribute table** to examine the relationship
     between these three variables.
 
-#### Selecting By Expression
-
-![](media/image33.png)
+### Selecting By Expression
 
 What we would like to do is select all of the cities in this dataset that have a
 population of 1 million or greater. This can be accomplished using any one of
 these three of these variables, but we will use the POP_RANK variable for the
 sake of simplicity.
 
-![](media/image34.png)
-
-On the Upper left corner of the Attribute Table, **find** the **Select by
-Expression button** and **click** on it.
+1. On the Upper left corner of the Attribute Table, **find** the **Select by
+Expression button** ![](./media/image33.png) and **click** on it.
 
 1.  **Expand** Fields and Values, and **Double-click** on the “**POP_RANK**”
 
-![](media/image35.png)
+3. **Type \<= 2**
 
-**Type \<= 2**
-
-1.  **Click** the **Select button and and Close.**
+1.  **Click** the **Select button ![](./media/image34.png) and and Close.**
 
 2.  **Scroll** through the Attribute Table and note the records that are
     selected.
 
 3.  You can **observe that the selection from the Attribute Table is also
-    reflected in the Map Canvas.**
+    reflected in the Map Canvas.**  
+    
+![](media/image36.png)
 
 ### Exporting Data
 
@@ -439,7 +397,7 @@ Notice that the Selection looks more manageable that the full dataset. Now you
 will export this selection as a new shapefile, and bring it back into QGIS as a
 new Layer.
 
-![](media/image36.png)
+
 
 **Right-click** on the **Cities Layer** and select **Save As.**
 
